@@ -18,8 +18,8 @@ public class MyFirstTest extends Simulation {
 
     // 3 Load Simulation
     {
-        setUp(
-                scn.injectOpen(atOnceUsers(1))
-        ).protocols(httpProtocol);
+        setUp(                                    //setUp() ties everything together
+                scn.injectOpen(atOnceUsers(1)) //injectOpen() defines how users are injected
+        ).protocols(httpProtocol); //protocols() defines how requests behave
     }
 }

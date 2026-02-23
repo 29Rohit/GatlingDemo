@@ -12,7 +12,7 @@ public class Engine {
     props.put("gatling.core.directory.resources", "src/test/resources");
     props.put("gatling.core.directory.results", "target/gatling");
     props.put("gatling.core.directory.binaries", "target/test-classes");
-    props.put("gatling.core.simulationClass", "DemoTest.VideoGame_Methods");
+    props.put("gatling.core.simulationClass", "LoadSimulation.basicSimulation");
 
     Map<String, Object> scalaProps = CollectionConverters.asScala(props);
 
